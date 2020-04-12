@@ -113,6 +113,8 @@
 		]
 	},
 	"scripts": {
+		"minimal-dev-install": "php maintenance/install.php --server=http://localhost:9412 --dbtype sqlite --dbpath cache/ --scriptpath '' --pass adminpassword MediaWiki Admin",
+		"minimal-dev-serve": "php -S localhost:9412",
 		"lint": "parallel-lint --exclude vendor",
 		"phpcs": "phpcs -p -s",
 		"fix": "phpcbf",
